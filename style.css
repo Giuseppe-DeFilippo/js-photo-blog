@@ -120,6 +120,11 @@ body {
     transform: translateX(-50%);
 }
 
+.photo-card:hover .pin {
+    display: none;
+}
+
+
 @media screen and (max-width: 768px) {
     .photo-card {
         width: calc(50% - 20px);
