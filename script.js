@@ -22,7 +22,7 @@ function card() {
 
         photos.forEach(photo => {
             const carta = `
-                <div class="photo-card debug">
+                <div class="photo-card debug elemento">
                     <div class="image debug">
                         <img src= ${photo.url} alt="foto">
                     </div>
