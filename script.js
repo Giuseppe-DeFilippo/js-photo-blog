@@ -23,6 +23,7 @@ function card() {
         photos.forEach(photo => {
             const carta = `
                 <div class="photo-card debug elemento">
+                <span class="pin"><img src="img/pin.svg" alt="pin"></span>
                     <div class="image debug">
                         <img src= ${photo.url} alt="foto">
                     </div>

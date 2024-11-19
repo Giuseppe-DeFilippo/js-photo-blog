@@ -74,6 +74,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 
 }
 
@@ -110,6 +111,13 @@ body {
 /* Effetto hover */
 .elemento:hover {
     transform: scale(1.2) rotate(45deg);
+}
+
+.pin {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media screen and (max-width: 768px) {
