@@ -111,3 +111,15 @@ body {
 .elemento:hover {
     transform: scale(1.2) rotate(45deg);
 }
+
+@media screen and (max-width: 768px) {
+    .photo-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .photo-card {
+        width: calc(100% - 20px);
+    }
+}
