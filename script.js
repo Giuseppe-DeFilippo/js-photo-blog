@@ -11,4 +11,27 @@ Inseriamo un foglio JavaScript ed effettuiamo una chiamata AJAX all’API di JSO
 
 console.clear();
 
-let foto = document.getElementById("foto");
+
+function card() {
+    const url = `https://jsonplaceholder.typicode.com/photos?_limit=6`;
+    let foto = document.getElementById("foto");
+    foto.innerHTML = "";
+    axios.get(url).then(risp => {
+        const photos = risp.data;
+        console.log(photos);
+
+        photos.forEach(photo => {
+            const carta = `
+                <div class="photo-card debug">
+                    <div class="image debug">
+                        <img src= ${photo.url} alt="foto">
+                    </div>
+                    <p>${photo.title}</p>
+                </div>
+            `;
+            foto.innerHTML += carta;
+        });
+    });
+};
+
+card()

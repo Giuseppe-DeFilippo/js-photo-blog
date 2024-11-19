@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.debug {
+    border: 1px solid red;
+}
+
 h1 {
     text-transform: uppercase;
     text-align: center;
@@ -64,15 +68,22 @@ h1 {
 
 }
 
+.image {
+    height: 80%;
+}
+
+.photo-card p {
+    height: 20%;
+}
 
 .photo-card .image img {
-    max-width: 600px;
-    max-height: 600px;
+    /* max-width: 600px;
+    max-height: 600px; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
     border-radius: 5px;
     object-fit: cover;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 
