@@ -120,6 +120,10 @@ body {
     transform: translateX(-50%);
 }
 
+.op {
+    opacity: 100;
+}
+
 .photo-card:hover .pin {
     display: none;
 }
@@ -133,17 +137,35 @@ body {
 
 
 #overlay {
-    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
+}
+
+.overlay-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+    /* Metti lo sfondo dietro al contenuto */
+}
+
+.overlay-content {
+    z-index: 1;
+    /* Mantieni il contenuto sopra lo sfondo */
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
 #overlay.d-none {
@@ -151,10 +173,20 @@ body {
 }
 
 
+
 @media screen and (max-width: 768px) {
     .photo-card {
         width: calc(50% - 20px);
     }
+
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 80px;
+
+    }
+
 }
 
 @media screen and (max-width: 492px) {
