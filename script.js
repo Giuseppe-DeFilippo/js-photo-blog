@@ -36,3 +36,13 @@ function card() {
 };
 
 card()
+function figure() {
+    const figura = document.querySelectorAll("container");
+    figura.forEach((carta) => {
+        carta.addEventListener("click", function () {
+            console.log(carta.id);
+            overlay.classList.remove("d-none");
+
+        });
+    });
+}
