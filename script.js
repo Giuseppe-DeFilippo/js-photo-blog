@@ -48,36 +48,26 @@ function figure() {
 
             // Crea il contenuto dell'overlay con l'immagine
             overlay.innerHTML = `
-    <div class="overlay-background"></div>
-    <div class="overlay-content">
-        <img src="${imageUrl}" alt="${title}" id="overlay-image">
-        <p>${title}</p>
-        <button id="close-overlay">Chiudi</button>
-    </div>
-`;
-
-
+                <div class="overlay-background"></div>
+                <div class="overlay-content">
+                    <img src="${imageUrl}" alt="${title}" id="overlay-image">
+                    <button id="close-overlay">Chiudi</button>
+                </div>
+                        `;
             // Mostra l'overlay
             overlay.classList.remove("d-none");
-
             // Aggiungi l'evento per chiudere l'overlay
             document.getElementById("close-overlay").addEventListener("click", () => {
                 overlay.classList.add("d-none");
             });
-
             // Zoom dell'immagine al click
             const overlayImage = document.getElementById("overlay-image");
-
             overlayImage.addEventListener("click", () => {
                 overlayImage.classList.toggle("zoomed");
             });
         });
     });
 }
-
-
-
-
 card()
 
 
