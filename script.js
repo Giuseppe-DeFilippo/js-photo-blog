@@ -51,7 +51,7 @@ function figure() {
                 <div class="overlay-background"></div>
                 <div class="overlay-content">
                     <img src="${imageUrl}" alt="${title}" id="overlay-image">
-                    <button id="close-overlay">Chiudi</button>
+                    <button class="customize" id="close-overlay">Chiudi</button>
                 </div>
                         `;
             // Mostra l'overlay
